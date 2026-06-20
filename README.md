@@ -29,9 +29,7 @@
 
 ### 1. Clone Repository
 
-git clone <repository-url>
-
-cd expense-tracker
+git clone https://github.com/your-username/expense-tracker.git cd expense-tracker
 
 ### 2. Configure Database
 
@@ -64,6 +62,5 @@ Frontend runs at:
 http://127.0.0.1:5500
 
 ---
-
 
 Built as a Full Stack Java Project using Spring Boot and MySQL.
