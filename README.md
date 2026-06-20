@@ -29,7 +29,7 @@
 
 ### 1. Clone Repository
 
-git clone https://github.com/your-username/expense-tracker.git cd expense-tracker
+https://github.com/Bhargavi-Sripathi/Personal-Expense-Tracker.git cd expense-tracker
 
 ### 2. Configure Database
 
