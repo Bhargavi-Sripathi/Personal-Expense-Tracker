@@ -1,0 +1,15 @@
+com\expensetracker\expense_tracker\dto\CategorySummaryDTO.class
+com\expensetracker\expense_tracker\ExpenseTrackerApplication.class
+com\expensetracker\expense_tracker\service\CategoryService.class
+com\expensetracker\expense_tracker\service\ExpenseService.class
+com\expensetracker\expense_tracker\dto\MonthComparisonDTO.class
+com\expensetracker\expense_tracker\dto\MonthlyExpenseDTO.class
+com\expensetracker\expense_tracker\repository\ExpenseRepository.class
+com\expensetracker\expense_tracker\entity\Category.class
+com\expensetracker\expense_tracker\exception\GlobalExceptionHandler.class
+com\expensetracker\expense_tracker\controller\ExpenseController.class
+com\expensetracker\expense_tracker\service\DataInitializer.class
+com\expensetracker\expense_tracker\controller\CategoryController.class
+com\expensetracker\expense_tracker\repository\CategoryRepository.class
+com\expensetracker\expense_tracker\dto\DashboardSummaryDTO.class
+com\expensetracker\expense_tracker\entity\Expense.class

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Personal Expense Tracker</h1>
+
+<button id="themeToggle" onclick="toggleTheme()">
+    🌙 Dark Mode
+</button>
+
+        <div class="dashboard">
+
+            <div class="card">
+                <h3>Total Expense</h3>
+                <p id="totalExpense">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Highest Expense</h3>
+                <p id="highestExpense">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Average Expense</h3>
+                <p id="averageExpense">₹0</p>
+            </div>
+
+            <div class="card">
+                <h3>Top Category</h3>
+                <p id="topCategory">-</p>
+            </div>
+
+        </div>
+
+        
+
+
+        <div class="form-container">
+
+           
+<h2>Add Expense</h2>
+
+
+
+<label for="category">Category:</label>
+<br>
+<select id="category">
+    <option value="">Select Category</option>
+    <option value="Food & Drinks">Food & Drinks</option>
+    <option value="Travel">Travel</option>
+    <option value="Shopping">Shopping</option>
+    <option value="Bills">Bills</option>
+    <option value="Education">Education</option>
+    <option value="Health">Health</option>
+    <option value="Entertainment">Entertainment</option>
+    <option value="Rent">Rent</option>
+    <option value="Others">Others</option>
+</select>
+<br>
+<label for="amount">Amount:</label>
+<input type="number" id="amount" placeholder="Enter Amount">
+
+<br>
+<label for="expenseDate">Date:</label>
+<input type="date" id="expenseDate">
+
+<label for="description">Description:</label>
+<input type="text" id="description" placeholder="Enter Description">
+
+<button id="saveButton" onclick="saveExpense()">
+    Add Expense
+</button>
+        </div>
+
+
+
+        <div class="chart-container">
+            <h2>Expense By Category</h2>
+            <canvas id="expensePieChart"></canvas>
+        </div>
+
+<div class="chart-container">
+    <h2>Monthly Expense Trend</h2>
+    <canvas id="expenseBarChart"></canvas>
+</div>
+<!-- Search Section -->
+
+
+<!-- Export Section -->
+
+
+
+<!-- Month Comparison -->
+
+<div class="dashboard">
+
+
+<div class="card">
+    <h3>Current Month</h3>
+    <p id="currentMonthExpense">₹0</p>
+</div>
+
+<div class="card">
+    <h3>Previous Month</h3>
+    <p id="previousMonthExpense">₹0</p>
+</div>
+
+<div class="card">
+    <h3>Difference</h3>
+    <p id="expenseDifference">₹0</p>
+</div>
+
+
+</div>
+<div class="search-container">
+
+
+<h2>Search Expenses</h2>
+
+<input
+    type="text"
+    id="searchKeyword"
+    placeholder="Search by category, description">
+
+<button onclick="searchExpenses()">
+    Search
+</button>
+
+<button onclick="loadPaginatedExpenses()">
+    Reset
+</button>
+</div>
+<div class="filter-container">
+
+
+<h2>Filter By Date</h2>
+
+<input type="date" id="startDate">
+
+<input type="date" id="endDate">
+
+<button onclick="filterExpenses()">
+    Filter
+</button>
+
+
+</div>
+<div class="export-container">
+
+
+<h2>Export Reports</h2>
+
+<button onclick="exportCSV()">
+    Export CSV
+</button>
+
+<button onclick="exportExcel()">
+    Export Excel
+</button>
+
+<button onclick="exportPDF()">
+    Export PDF
+</button>
+
+
+</div>
+
+<div class="category-summary-container">
+
+<h2>Category Summary</h2>
+
+<input
+    type="number"
+    id="summaryMonth"
+    placeholder="Month (1-12)">
+
+<input
+    type="number"
+    id="summaryYear"
+    placeholder="Year">
+
+<button onclick="loadCategorySummary()">
+    Get Summary
+</button>
+
+<table>
+
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Total Amount</th>
+        </tr>
+    </thead>
+
+    <tbody id="categorySummaryBody">
+    </tbody>
+
+</table>
+
+
+</div>
+
+<div class="current-month-container">
+
+<h2>Current Month Expenses</h2>
+
+<button onclick="loadCurrentMonthExpenses()">
+    Load Current Month Expenses
+</button>
+
+<table>
+
+    <thead>
+        <tr>
+             <th>Category</th>
+            <th>Amount</th>
+          <th>Description</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+
+    <tbody id="currentMonthBody">
+    </tbody>
+
+</table>
+
+
+</div>
+
+
+        <h2>Expense List</h2>
+
+        <table>
+
+            <thead>
+                <tr>
+                    
+                  
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="expenseTableBody">
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+    <div class="pagination-container">
+
+
+<button onclick="previousPage()">
+    Previous
+</button>
+
+<span id="pageInfo">
+    Page 1
+</span>
+
+<button onclick="nextPage()">
+    Next
+</button>
+
+
+</div>
+
+
+</body>
+
+</html>
+

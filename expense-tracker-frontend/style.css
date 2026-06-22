@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.dashboard {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background: #218838;
+}
+
+.chart-container {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+#expensePieChart {
+    max-width: 500px;
+    margin: auto;
+}
+#expenseBarChart{
+    max-width: 900px;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+table th {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+}
+
+table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table button {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.search-container {
+background: #ffffffcd;
+padding: 20px;
+margin: 20px 0;
+border-radius: 10px;
+}
+
+.search-container input {
+margin: 5px;
+padding: 10px;
+}
+
+.search-container button {
+padding: 10px 15px;
+margin: 5px;
+cursor: pointer;
+}
+.export-container {
+background: white;
+padding: 20px;
+margin: 20px 0;
+border-radius: 10px;
+}
+
+.export-container button {
+margin-right: 10px;
+padding: 10px 15px;
+cursor: pointer;
+}
+.filter-container {
+background: #ffffff;
+padding: 20px;
+margin: 20px 0;
+border-radius: 10px;
+}
+
+.filter-container input {
+margin: 5px;
+padding: 10px;
+}
+
+.filter-container button {
+padding: 10px 15px;
+margin: 5px;
+cursor: pointer;
+}
+
+.category-summary-container {
+background: white;
+padding: 20px;
+margin: 20px 0;
+border-radius: 10px;
+}
+
+.category-summary-container input {
+padding: 10px;
+margin: 5px;
+}
+
+.category-summary-container button {
+padding: 10px 15px;
+margin: 5px;
+cursor: pointer;
+}
+
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .card,
+.dark-mode .form-container,
+.dark-mode .chart-container,
+.dark-mode .search-container,
+.dark-mode .filter-container,
+.dark-mode .export-container,
+.dark-mode .category-summary-container,
+.dark-mode .current-month-container,
+.dark-mode table {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode table td {
+    color: white;
+    border-bottom: 1px solid #444;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3 {
+    color: white;
+}
+
+.dark-mode input,
+.dark-mode select {
+    background: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+#themeToggle {
+    float: right;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
